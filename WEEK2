@@ -1,0 +1,42 @@
+to crate a hidden file using ls command :
+
+
+windows :
+Type attrib +h folder name to make your folder hidden from everyone.
+To make it visible again, remove the hidden attribute using attrib -h folder_name./
+
+$ touch soumaia.txt
+$ attrib +h soumaia.txt
+$ attrib -h soumaia.txt
+
+-------------------------------------------------------------------------------------
+
+
+to create multiple nested directories with one mkdir command.
+$ sudo mkdir x/y/z
+
+
+$ mkdir -p /c/usres/unmesh/these/folder/are/just/for/fun
+
+
+---------------------------------------------------------------------------------------
+Verify number of characters in the file.
+
+
+
+$ echo "hello" > fun
+$ echo "i am soumaia" >> fun
+
+
+$ wc -c fun
+19 fun
+
+------------------------------------------------------------------------------------
+
+to append something in the file *WITHOUT* a newline character:
+
+$ echo "hello" > fun
+
+$ echo -n "good morning" > fun
+
+$ cat fun
