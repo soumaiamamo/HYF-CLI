@@ -1,1 +1,46 @@
 
+to create a directory and create an empty file :
+$ mkdir week3
+$ cd week3
+$ touch blank
+
+------------------------------------------------
+
+to write a content hello five times to the file greeting.txt:
+$ for i in {1..5}; do echo "hello">>greetings.txt;done
+
+-------------------------------------------------
+
+to  copy the file and paste its content onto 5 files :
+$ cat greetings.txt > 1.txt > 2.txt > 3.txt > 4.txt >5.txt
+
+--------------------------------------------------
+to write the text cat to pets.txt:
+
+$ echo "cat" > pets.txt
+--------------------------------------------------
+to append the text "dog" to pets.txt:
+
+$ echo "dog" >> pets.txt
+-------------------------------------------------
+   to  append the text "hamster" to pets.txt :
+   $ echo "hamster" >> pets.txt
+   -----------------------------------------------
+ to write the text "cat" to commands.txt:
+ 
+ $ echo "cat" > commands.txt
+ -------------------------------------------------
+   to append the text "ls" to commands.txt:
+   
+   $ echo "ls" >> commands.txt
+   ------------------------------------------------
+   To append the text "pwd" to commands.txt:
+   
+   $ echo "pwd" >> commands.txt
+-----------------------------------------------------
+   to find unique strings from these two files pets.txt and commands.txt
+   and store the unique strings in lovelyCommands.txt: 
+   
+   $ sort -u pets.txt commands.txt > lovelycommands.txt
+   
+   ---------------------------------------------------------
